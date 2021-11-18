@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Игра «Life»</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="game_area" class="game">
+        <canvas id="game_canvas" class="game__canvas"></canvas>
+    </main>
+
+    <aside class="side">
+        <div class="range">
+            <div class="range__text">Заполненность поля</div>
+            <input type="range" id="range" class="range__slider" min="1" max="10" value="5">
+            <span id="range_value" class="range__value"></span>
+        </div>
+        <button id="button_new_game" class="button button__restart">new game</button>
+        <button id="button_start" class="button button__start">start/stop</button>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+</html>
